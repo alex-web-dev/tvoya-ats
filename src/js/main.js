@@ -7,3 +7,4 @@ import "./menu";
 import "./reviews";
 import "./business";
 import "./addition-service";
+import "./clients";
