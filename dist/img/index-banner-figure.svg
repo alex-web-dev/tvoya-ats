@@ -1,0 +1,50 @@
+<svg width="1025" height="1025" viewBox="0 0 1025 1025" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Img_inner" data-figma-trr="r40u1.9-0f">
+<path d="M644.751 188.445C644.751 155.12 636.912 122.574 622.261 94.927C607.609 67.2798 586.834 45.8236 562.631 33.1829C538.443 20.5502 511.873 17.2611 486.249 23.6877C460.612 30.1177 436.97 46.0126 418.359 69.4788C399.745 92.9485 387.028 122.908 381.873 155.585C376.718 188.261 379.366 222.127 389.471 252.885C399.576 283.645 416.662 309.856 438.5 328.254C459.987 346.357 485.119 356.096 510.805 356.396L512.028 356.404L512.148 356.409C512.741 356.469 513.203 356.969 513.203 357.577C513.203 358.226 512.677 358.752 512.028 358.752C485.314 358.752 459.2 348.764 436.987 330.05C414.775 311.336 397.461 284.738 387.238 253.618C377.015 222.499 374.341 188.255 379.553 155.219C384.764 122.183 397.628 91.8367 416.518 68.0188C435.409 44.2009 459.476 27.9808 485.678 21.4094C511.879 14.8382 539.038 18.2107 563.719 31.1008C588.4 43.991 609.495 65.8196 624.337 93.8264C639.179 121.833 647.1 154.761 647.1 188.445C647.1 189.093 646.574 189.619 645.926 189.619C645.277 189.619 644.751 189.093 644.751 188.445Z" fill="url(#paint0_linear_2002_967)"/>
+</g>
+<use xlink:href="#Img_inner" transform="translate(86.4029 -73.7951) rotate(9)"/>
+<use xlink:href="#Img_inner" transform="translate(183.286 -133.165) rotate(18)"/>
+<use xlink:href="#Img_inner" transform="translate(288.264 -176.649) rotate(27)"/>
+<use xlink:href="#Img_inner" transform="translate(398.752 -203.174) rotate(36)"/>
+<use xlink:href="#Img_inner" transform="translate(512.029 -212.09) rotate(45)"/>
+<use xlink:href="#Img_inner" transform="translate(625.306 -203.174) rotate(54)"/>
+<use xlink:href="#Img_inner" transform="translate(735.794 -176.649) rotate(63)"/>
+<use xlink:href="#Img_inner" transform="translate(840.772 -133.165) rotate(72)"/>
+<use xlink:href="#Img_inner" transform="translate(937.655 -73.7952) rotate(81)"/>
+<use xlink:href="#Img_inner" transform="translate(1024.06 -0.000174321) rotate(90)"/>
+<use xlink:href="#Img_inner" transform="translate(1097.85 86.4027) rotate(99)"/>
+<use xlink:href="#Img_inner" transform="translate(1157.22 183.286) rotate(108)"/>
+<use xlink:href="#Img_inner" transform="translate(1200.71 288.264) rotate(117)"/>
+<use xlink:href="#Img_inner" transform="translate(1227.23 398.752) rotate(126)"/>
+<use xlink:href="#Img_inner" transform="translate(1236.15 512.029) rotate(135)"/>
+<use xlink:href="#Img_inner" transform="translate(1227.23 625.306) rotate(144)"/>
+<use xlink:href="#Img_inner" transform="translate(1200.71 735.794) rotate(153)"/>
+<use xlink:href="#Img_inner" transform="translate(1157.22 840.772) rotate(162)"/>
+<use xlink:href="#Img_inner" transform="translate(1097.85 937.655) rotate(171)"/>
+<use xlink:href="#Img_inner" transform="translate(1024.06 1024.06) rotate(-180)"/>
+<use xlink:href="#Img_inner" transform="translate(937.655 1097.85) rotate(-171)"/>
+<use xlink:href="#Img_inner" transform="translate(840.772 1157.22) rotate(-162)"/>
+<use xlink:href="#Img_inner" transform="translate(735.794 1200.71) rotate(-153)"/>
+<use xlink:href="#Img_inner" transform="translate(625.306 1227.23) rotate(-144)"/>
+<use xlink:href="#Img_inner" transform="translate(512.029 1236.15) rotate(-135)"/>
+<use xlink:href="#Img_inner" transform="translate(398.752 1227.23) rotate(-126)"/>
+<use xlink:href="#Img_inner" transform="translate(288.264 1200.71) rotate(-117)"/>
+<use xlink:href="#Img_inner" transform="translate(183.286 1157.22) rotate(-108)"/>
+<use xlink:href="#Img_inner" transform="translate(86.4032 1097.85) rotate(-99)"/>
+<use xlink:href="#Img_inner" transform="translate(0.000190597 1024.06) rotate(-90)"/>
+<use xlink:href="#Img_inner" transform="translate(-73.7949 937.655) rotate(-81)"/>
+<use xlink:href="#Img_inner" transform="translate(-133.165 840.772) rotate(-72)"/>
+<use xlink:href="#Img_inner" transform="translate(-176.648 735.794) rotate(-63)"/>
+<use xlink:href="#Img_inner" transform="translate(-203.174 625.306) rotate(-54)"/>
+<use xlink:href="#Img_inner" transform="translate(-212.089 512.029) rotate(-45)"/>
+<use xlink:href="#Img_inner" transform="translate(-203.174 398.752) rotate(-36)"/>
+<use xlink:href="#Img_inner" transform="translate(-176.648 288.264) rotate(-27)"/>
+<use xlink:href="#Img_inner" transform="translate(-133.165 183.286) rotate(-18)"/>
+<use xlink:href="#Img_inner" transform="translate(-73.795 86.4029) rotate(-8.99999)"/>
+<defs>
+<linearGradient id="paint0_linear_2002_967" x1="512.029" y1="18.137" x2="512.029" y2="358.752" gradientUnits="userSpaceOnUse">
+<stop offset="0.730769" stop-color="#404569"/>
+<stop offset="1" stop-color="#404569" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
