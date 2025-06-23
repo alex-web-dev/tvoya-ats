@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Твоя АТС</title>
+  </head>
+  <body>
+    <header class="border-border absolute z-50 w-full border bg-white md:bg-none">
+      <div class="relative z-30 bg-white/50 py-3 md:py-5">
+        <div class="container">
+          <div class="hidden items-center justify-between gap-5 pb-5 md:flex">
+            <div class="flex items-center gap-2">
+              <img src="/img/icons/location.svg" alt="" />
+              <span class="text-sm leading-4 font-medium">г.Новосибирск, ул.Демакова, дом 27, офис 15.</span>
+            </div>
+            <div class="flex items-center gap-5">
+              <a class="flex items-center gap-2" href="mailto:sales@tvoya-ats.ru">
+                <img src="/img/icons/email.svg" alt="" />
+                <span class="text-sm leading-4 font-medium">sales@tvoya-ats.ru</span>
+              </a>
+              <a class="flex items-center gap-2" href="tel:+73832396631">
+                <img src="/img/icons/phone.svg" alt="" />
+                <span class="text-sm leading-4 font-medium">(383) 239-66-31</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-5">
+            <a class="block w-[106px] md:w-[177px]" href="index.html">
+              <img class="w-full" src="img/logo.svg" alt="" />
+            </a>
+            <div class="hidden items-center gap-6 md:flex">
+              <a class="leading-5 font-semibold" href="#">Главная</a>
+              <a class="leading-5 font-semibold" href="#">Продукт</a>
+              <a class="leading-5 font-semibold" href="#">О компании</a>
+              <a class="leading-5 font-semibold" href="#">Блог</a>
+            </div>
+            <div class="flex gap-3 md:hidden">
+              <button class="bg-light-300 flex h-7 w-7 cursor-pointer items-center justify-center rounded-sm">
+                <img src="/img/icons/phone.svg" alt="" />
+              </button>
+              <button
+                class="toggle-menu group bg-light-300 flex h-7 w-7 cursor-pointer flex-col items-center justify-center rounded-sm">
+                <span class="relative flex h-[1px] w-[14px] flex-col">
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[-3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+                  <span
+                    class="absolute h-full w-full flex-none rounded bg-black transition-opacity duration-300 group-[.is-active]:opacity-0"></span>
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-0 left-0 z-10 h-full w-full bg-white md:z-0"></div>
+
+      <div class="pointer-events-none absolute top-0 right-0 h-[1420px] w-full overflow-hidden">
+        <div class="absolute top-0 left-1/2 container -translate-x-1/2">
+          <div
+            class="bg-primary/90 absolute -top-[165px] -right-[182px] h-[461px] w-[461px] rounded-full blur-[180px] sm:-right-[152px] md:-top-[342px] md:-right-[307px] md:h-[815px] md:w-[815px] md:blur-[413px] lg:-top-[370px] lg:-right-[292px] lg:h-[877px] lg:w-[877px] xl:-top-[463px] xl:-right-[634px] xl:h-[1059px] xl:w-[1059px] 2xl:-right-[514px]"></div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="mobile-menu fixed top-0 left-0 z-60 flex h-0 w-full flex-col overflow-hidden bg-white transition-all duration-500 [.is-active]:h-dvh">
+      <div class="border-border border py-3">
+        <div class="container">
+          <div class="flex items-center justify-between gap-5">
+            <a class="block w-[106px] md:w-[177px]" href="index.html">
+              <img class="w-full" src="img/logo.svg" alt="" />
+            </a>
+            <div class="flex gap-3">
+              <button class="bg-light-300 flex h-7 w-7 cursor-pointer items-center justify-center rounded-sm">
+                <img src="/img/icons/phone.svg" alt="" />
+              </button>
+              <button
+                class="toggle-menu group bg-light-300 flex h-7 w-7 cursor-pointer flex-col items-center justify-center rounded-sm">
+                <span class="relative flex h-[1px] w-[14px] flex-col">
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[-3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+                  <span
+                    class="absolute h-full w-full flex-none rounded bg-black transition-opacity duration-300 group-[.is-active]:opacity-0"></span>
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-auto py-6">
+        <div class="container flex flex-col">
+          <div class="flex flex-col items-start gap-2">
+            <a class="leading-5 font-semibold" href="#">Главная</a>
+            <a class="leading-5 font-semibold" href="#">Продукт</a>
+            <a class="leading-5 font-semibold" href="#">О компании</a>
+            <a class="leading-5 font-semibold" href="#">Блог</a>
+          </div>
+          <div class="mt-auto flex flex-col items-start gap-4 pt-4">
+            <a class="text-grey flex items-center gap-2 text-xs leading-4 font-medium" href="mailto:sales@tvoya-ats.ru">
+              <img class="h-4 w-4 object-contain" src="/img/icons/email-grey.svg" alt="" />
+              <span>sales@tvoya-ats.ru</span>
+            </a>
+            <a class="text-grey flex items-center gap-2 text-xs leading-4 font-medium" href="tel:+73832396631">
+              <img class="h-4 w-4 object-contain" src="/img/icons/phone-grey.svg" alt="" />
+              <span>(383) 239-66-31</span>
+            </a>
+            <div class="text-grey flex items-center gap-2 text-xs leading-4 font-medium">
+              <img class="h-4 w-4 object-contain" src="/img/icons/location-grey.svg" alt="" />
+              <span>г.Новосибирск, ул.Демакова, дом 27, офис 15.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="relative flex-auto pt-[54px] md:pt-[118px]">
+      <section class="relative z-20 pt-71 pb-4 md:pt-115 md:pb-10 xl:pt-90 xl:pb-20">
+        <div class="container">
+          <div class="flex flex-col items-start justify-end">
+            <h1
+              class="xl:text-10xl max-w-[700px] text-5xl leading-9 font-semibold md:text-7xl md:leading-14.5 xl:max-w-[1196px] xl:leading-30">
+              Умная IP-АТС для бизнеса любого масштаба
+            </h1>
+            <p
+              class="mt-3 max-w-[575px] text-sm leading-4 font-medium text-black/60 md:mt-4 md:text-lg md:leading-6 xl:mt-5 xl:text-xl">
+              Российская облачная АТС с понятным интерфейсом и гибкой интеграцией с CRM и другими системами
+            </p>
+            <button class="btn mt-6 md:mt-8 xl:mt-10">
+              <span>Подключить</span>
+              <img src="img/icons/arrow-right-white.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="pointer-events-none absolute top-0 right-0 h-full w-full overflow-hidden">
+        <div class="absolute top-0 left-1/2 container -translate-x-1/2">
+          <img
+            class="absolute -top-[107px] -right-[154px] h-[436px] w-[436px] max-w-none sm:-right-[143px] md:-top-[203px] md:-right-[277px] md:h-[780px] md:w-[780px] lg:-top-[231px] lg:-right-[257px] lg:h-[838px] lg:w-[838px] xl:-top-[265px] xl:-right-[413px] xl:h-[906px] xl:w-[906px] 2xl:-top-[325px] 2xl:-right-[354px] 2xl:h-[1025px] 2xl:w-[1025px]"
+            src="img/index-banner-figure.svg"
+            alt="" />
+        </div>
+      </div>
+
+      <section class="py-10">
+        <div class="container">
+          <h3
+            class="mx-auto max-w-[230px] text-center text-xs leading-3.5 font-medium md:max-w-[400px] md:text-lg md:leading-6">
+            <b class="font-extrabold">Текущие клиенты</b>
+            , которые уже пользуются нашей АТС
+          </h3>
+        </div>
+        <div class="relative mx-auto mt-6 w-full max-w-[1920px] md:mt-8">
+          <div class="flex gap-4 overflow-hidden select-none md:gap-6">
+            <div
+              class="animate-scroll-mobile md:animate-scroll-desktop flex flex-none items-center justify-center gap-4 md:gap-6">
+              <img class="h-7 md:h-10" src="/img/clients/quick-auto.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/slav-def.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/smg.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/topomotrs.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/viteka.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/avantage.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/sibtt.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/azimut.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/baumix.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/quick-auto.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/slav-def.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/smg.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/topomotrs.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/viteka.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/avantage.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/sibtt.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/azimut.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/baumix.png" alt="" />
+            </div>
+            <div
+              class="animate-scroll-mobile md:animate-scroll-desktop flex flex-none items-center justify-center gap-4 md:gap-6">
+              <img class="h-7 md:h-10" src="/img/clients/quick-auto.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/slav-def.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/smg.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/topomotrs.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/viteka.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/avantage.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/sibtt.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/azimut.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/baumix.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/quick-auto.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/slav-def.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/smg.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/topomotrs.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/viteka.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/avantage.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/sibtt.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/azimut.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/baumix.png" alt="" />
+            </div>
+            <div
+              class="animate-scroll-mobile md:animate-scroll-desktop flex flex-none items-center justify-center gap-4 md:gap-6">
+              <img class="h-7 md:h-10" src="/img/clients/quick-auto.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/slav-def.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/smg.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/topomotrs.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/viteka.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/avantage.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/sibtt.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/azimut.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/baumix.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/quick-auto.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/slav-def.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/smg.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/topomotrs.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/viteka.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/avantage.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/sibtt.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/azimut.png" alt="" />
+              <img class="h-7 md:h-10" src="/img/clients/baumix.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="pointer-events-none absolute top-0 left-0 hidden h-full w-full bg-[linear-gradient(90deg,_#fff_0%,_rgba(255,255,255,0)_25%,_rgba(255,255,255,0)_50.48%,_rgba(255,255,255,0)_75%,_#fff_100%)] xl:block"></div>
+        </div>
+      </section>
+
+      <section class="pt-10 pb-6 md:py-10 xl:py-20">
+        <div class="container">
+          <h2
+            class="mb-6 text-3xl leading-9 font-semibold md:mb-8 md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+            Почему мы?
+          </h2>
+          <div class="-mt-4 -ml-4 flex flex-wrap xl:-mt-5 xl:-ml-5 2xl:-mt-6 2xl:-ml-6">
+            <div class="w-full pt-4 pl-4 md:w-1/2 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="border-border h-full rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                <div
+                  class="bg-primary/12 mb-4 flex h-[48px] w-[48px] items-center justify-center rounded-xl md:mb-8 md:h-[62px] md:w-[62px] md:rounded-2xl">
+                  <img class="h-6 w-6 object-contain md:h-8 md:w-8" src="/img/features/1.svg" alt="" />
+                </div>
+                <p
+                  class="max-w-[530px] text-sm leading-4 font-semibold md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Российское программное обеспечение с полной локализацией
+                </p>
+              </div>
+            </div>
+            <div class="w-full pt-4 pl-4 md:w-1/2 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="border-border h-full rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                <div
+                  class="bg-primary/12 mb-4 flex h-[48px] w-[48px] items-center justify-center rounded-xl md:mb-8 md:h-[62px] md:w-[62px] md:rounded-2xl">
+                  <img class="h-6 w-6 object-contain md:h-8 md:w-8" src="/img/features/2.svg" alt="" />
+                </div>
+                <p
+                  class="max-w-[530px] text-sm leading-4 font-semibold md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Мгновенный отклик и стабильная работа интерфейса
+                </p>
+              </div>
+            </div>
+            <div class="w-full pt-4 pl-4 md:w-1/3 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="border-border h-full rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                <div
+                  class="bg-primary/12 mb-4 flex h-[48px] w-[48px] items-center justify-center rounded-xl md:mb-8 md:h-[62px] md:w-[62px] md:rounded-2xl">
+                  <img class="h-6 w-6 object-contain md:h-8 md:w-8" src="/img/features/3.svg" alt="" />
+                </div>
+                <p
+                  class="max-w-[530px] text-sm leading-4 font-semibold md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Интуитивно понятный интерфейс без лишнего обучения
+                </p>
+              </div>
+            </div>
+            <div class="w-full pt-4 pl-4 md:w-1/3 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="border-border h-full rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                <div
+                  class="bg-primary/12 mb-4 flex h-[48px] w-[48px] items-center justify-center rounded-xl md:mb-8 md:h-[62px] md:w-[62px] md:rounded-2xl">
+                  <img class="h-6 w-6 object-contain md:h-8 md:w-8" src="/img/features/4.svg" alt="" />
+                </div>
+                <p
+                  class="max-w-[530px] text-sm leading-4 font-semibold md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Техническая поддержка в вашем часовом поясе (+7 мск)
+                </p>
+              </div>
+            </div>
+            <div class="w-full pt-4 pl-4 md:w-1/3 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="border-border h-full rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                <div
+                  class="bg-primary/12 mb-4 flex h-[48px] w-[48px] items-center justify-center rounded-xl md:mb-8 md:h-[62px] md:w-[62px] md:rounded-2xl">
+                  <img class="h-6 w-6 object-contain md:h-8 md:w-8" src="/img/features/5.svg" alt="" />
+                </div>
+                <p
+                  class="max-w-[530px] text-sm leading-4 font-semibold md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Совместимость со всеми SIP-устройствами
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 xl:py-20">
+        <div class="container">
+          <h2
+            class="mb-6 max-w-[288px] text-3xl leading-9 font-semibold md:mb-8 md:max-w-[610px] md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:max-w-[640px] 2xl:text-9xl 2xl:leading-18">
+            Готовые решения для вашего бизнеса
+          </h2>
+          <div class="business-swiper swiper max-xl:!-mx-8 max-xl:!px-8 max-md:!-mx-4 max-md:!px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto max-xl:!w-[389px] max-md:!w-[280px]">
+                <div
+                  class="flex h-full flex-col items-start rounded-2xl bg-[linear-gradient(197.66deg,_#00A8DF_-0.64%,_#005B79_100.22%)] p-4 xl:rounded-4xl xl:p-8">
+                  <div class="inline-flex rounded-xl bg-white px-4 py-2 leading-5 font-semibold">
+                    Для малого бизнеса
+                  </div>
+                  <div
+                    class="mt-3 text-4xl leading-9 font-extrabold text-white md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+                    20 000 ₽
+                  </div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium text-white md:text-lg md:leading-6 xl:text-xl">
+                    <p>
+                      Коробочный вариант IP-АТС ТВОЯ АТС подходит для небольших и маленьких компаний. Позволяет
+                      с минимальными затратами получить функционал АТС корпоративного класса.
+                    </p>
+                  </div>
+                  <ul
+                    class="mt-3 list-disc space-y-3 pl-5 text-xs leading-3.5 font-medium text-white/80 marker:text-[10px] marker:text-white/80 md:pl-6 md:text-base md:leading-5 md:marker:text-[15px] xl:text-lg xl:leading-6">
+                    <li>До 20 абонентов (с возможностью расширения)</li>
+                    <li>До 10 одновременных разговоров</li>
+                    <li>Запись разговоров на встроенный носитель до 4х месяцев</li>
+                  </ul>
+                  <button class="mt-3 flex cursor-pointer items-center gap-2">
+                    <span
+                      class="text-xs leading-4 font-bold text-white md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                      Показать все
+                    </span>
+                    <img class="rotate-90" src="/img/icons/right-white.svg" alt="" />
+                  </button>
+                  <div class="mt-auto">
+                    <button class="btn-white mt-6">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto max-xl:!w-[389px] max-md:!w-[280px]">
+                <div
+                  class="flex h-full flex-col items-start rounded-2xl bg-[linear-gradient(197.66deg,_#A478FB_-0.64%,_#683CBF_100.22%)] p-4 xl:rounded-4xl xl:p-8">
+                  <div class="inline-flex rounded-xl bg-white px-4 py-2 leading-5 font-semibold">
+                    Для среднего бизнеса
+                  </div>
+                  <div
+                    class="mt-3 text-4xl leading-9 font-extrabold text-white md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+                    30 000 ₽
+                  </div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium text-white md:text-lg md:leading-6 xl:text-xl">
+                    <p>Полнофункциональная АТС подходит для малого и среднего бизнеса с количеством абонентов до 100</p>
+                  </div>
+                  <div
+                    class="mt-3 space-y-3 text-xs leading-4 font-medium text-white md:text-lg md:leading-6 xl:text-xl">
+                    <p>
+                      При необходимости данную АТС можно модернизировать увеличив количество обслуживаемых абонентов
+                      и одновременных разговоров
+                    </p>
+                  </div>
+                  <ul
+                    class="mt-3 list-disc space-y-3 pl-5 text-xs leading-3.5 font-medium text-white/80 marker:text-[10px] marker:text-white/80 md:pl-6 md:text-base md:leading-5 md:marker:text-[15px] xl:text-lg xl:leading-6">
+                    <li>До 100 абонентов</li>
+                    <li>До 30 одновременных разговоров</li>
+                    <li>
+                      Запись разговоров до 6х мес. на встроенный носитель, либо на год и более на доп. опциональный
+                      жёсткий диск
+                    </li>
+                  </ul>
+                  <button class="mt-3 flex cursor-pointer items-center gap-2">
+                    <span
+                      class="text-xs leading-4 font-bold text-white md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                      Показать все
+                    </span>
+                    <img class="rotate-90" src="/img/icons/right-white.svg" alt="" />
+                  </button>
+                  <div class="mt-auto">
+                    <button class="btn-white mt-6">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto max-xl:!w-[389px] max-md:!w-[280px]">
+                <div
+                  class="flex h-full flex-col items-start rounded-2xl bg-[linear-gradient(197.66deg,_#78FBC7_-0.64%,_#0A8D59_100.22%)] p-4 xl:rounded-4xl xl:p-8">
+                  <div class="inline-flex rounded-xl bg-white px-4 py-2 leading-5 font-semibold">
+                    Для крупного бизнеса
+                  </div>
+                  <div
+                    class="mt-3 text-4xl leading-9 font-extrabold text-white md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+                    60 000 ₽
+                  </div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium text-white md:text-lg md:leading-6 xl:text-xl">
+                    <p>
+                      Данная АТС подходит для среднего и крупного бизнеса, которым важна стабильность,
+                      отказоустойчивость, и масштабируемость
+                    </p>
+                  </div>
+                  <ul
+                    class="mt-3 list-disc space-y-3 pl-5 text-xs leading-3.5 font-medium text-white/80 marker:text-[10px] marker:text-white/80 md:pl-6 md:text-base md:leading-5 md:marker:text-[15px] xl:text-lg xl:leading-6">
+                    <li>От 100 абонентов</li>
+                    <li>От 50 одновременных разговоров</li>
+                    <li>
+                      Запись разговоров зависит от дискового пространства (согласно требованиям заказчика). Голосовое
+                      приветствие, многоуровневые IVR
+                    </li>
+                  </ul>
+                  <button class="mt-3 flex cursor-pointer items-center gap-2">
+                    <span
+                      class="text-xs leading-4 font-bold text-white md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                      Показать все
+                    </span>
+                    <img class="rotate-90" src="/img/icons/right-white.svg" alt="" />
+                  </button>
+                  <div class="mt-auto">
+                    <button class="btn-white mt-6">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-10 pb-10 md:pt-0 xl:pb-20">
+        <div class="container">
+          <h2
+            class="mb-6 max-w-[610px] text-3xl leading-9 font-semibold md:mb-8 md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:max-w-[640px] 2xl:text-9xl 2xl:leading-18">
+            Дополнительные пакеты услуг
+          </h2>
+          <div class="addition-service-swiper swiper !-m-8 !p-8 max-md:!-m-4 max-md:!p-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !h-auto opacity-0 !transition-opacity max-xl:!w-[389px] max-md:!w-[280px]">
+                <div
+                  class="border-border flex h-full flex-col items-start rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                  <h3
+                    class="text-primary w-[186px] text-xl leading-6 font-extrabold md:w-auto md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                    Виртуальная машина
+                  </h3>
+                  <div class="py-2 leading-5 font-semibold md:mt-4 md:text-xl md:leading-6 xl:text-2xl xl:leading-7">
+                    15 000 ₽
+                  </div>
+                  <p class="mt-3 text-sm leading-4 font-medium text-black/60 md:text-lg md:leading-6 xl:text-xl">
+                    Если ваша компания имеет готовую среду виртуализации, то этот продукт для вас. Производительность
+                    данной АТС будет зависеть от ресурсов выделенных для виртуальной машины. Набор функциональных
+                    возможностей будет такой же как в телефонной станции для крупного бизнеса
+                  </p>
+                  <div class="mt-auto">
+                    <button
+                      class="text-primary mt-5 cursor-pointer py-2.5 text-[13px] leading-4 font-bold md:mt-5 md:py-4 md:text-base md:leading-5 xl:text-lg xl:leading-6 2xl:mt-6">
+                      Оставить заявку
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto opacity-0 !transition-opacity max-xl:!w-[389px] max-md:!w-[280px]">
+                <div
+                  class="border-border flex h-full flex-col items-start rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                  <h3
+                    class="text-primary text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                    Модуль автоматического информирования
+                  </h3>
+                  <div class="py-2 leading-5 font-semibold md:mt-4 md:text-xl md:leading-6 xl:text-2xl xl:leading-7">
+                    7 000 ₽
+                  </div>
+                  <p class="mt-3 text-sm leading-4 font-medium text-black/60 md:text-lg md:leading-6 xl:text-xl">
+                    Данный модуль будет полезен коллекторским компаниям или компаниям занимающимся автоинформированием
+                    своих клиентов о каких то новинках или новых услугах, либо задолженности
+                  </p>
+                  <div class="mt-auto">
+                    <button
+                      class="text-primary mt-5 cursor-pointer py-2.5 text-[13px] leading-4 font-bold md:mt-5 md:py-4 md:text-base md:leading-5 xl:text-lg xl:leading-6 2xl:mt-6">
+                      Оставить заявку
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !h-auto opacity-0 !transition-opacity max-xl:!w-[389px] max-md:!w-[280px]">
+                <div
+                  class="border-border flex h-full flex-col items-start rounded-2xl border bg-white p-4 shadow-[0px_0px_32px_rgba(0,0,0,0.08)] xl:rounded-4xl xl:p-8">
+                  <h3
+                    class="text-primary text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                    Модуль автоматизированного набора номера
+                  </h3>
+                  <div class="py-2 leading-5 font-semibold md:mt-4 md:text-xl md:leading-6 xl:text-2xl xl:leading-7">
+                    15 000 ₽
+                  </div>
+                  <p class="mt-3 text-sm leading-4 font-medium text-black/60 md:text-lg md:leading-6 xl:text-xl">
+                    Модуль автоматизированного набора номера и управления исходящими кампаниями ТВОЯ АТС для Asterisk
+                    призван автоматизировать и ускорить работу менеджеров активных продаж и операторов ЦОВ занимающимися
+                    холодными звонками
+                  </p>
+                  <div class="mt-auto">
+                    <button
+                      class="text-primary mt-5 cursor-pointer py-2.5 text-[13px] leading-4 font-bold md:mt-5 md:py-4 md:text-base md:leading-5 xl:text-lg xl:leading-6 2xl:mt-6">
+                      Оставить заявку
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 xl:py-20">
+        <div class="container">
+          <h2
+            class="mb-6 max-w-[488px] text-3xl leading-9 font-semibold md:mb-8 md:max-w-[580px] md:text-6xl md:leading-11 xl:max-w-[790px] xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+            Сервис для эффективной работы в бизнесе
+          </h2>
+          <div class="flex flex-col gap-2 md:gap-4 xl:gap-5 2xl:gap-6">
+            <div class="bg-light flex flex-col items-center gap-6 rounded-2xl p-4 xl:flex-row xl:rounded-4xl xl:p-8">
+              <div class="xl-w-1/2 w-full">
+                <h3
+                  class="text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                  Модуль автоматического информирования клиентов
+                </h3>
+                <p
+                  class="font-regular mt-3 text-sm leading-4 md:mt-4 md:text-lg md:leading-6 md:font-medium xl:text-xl">
+                  Данный модуль будет полезен коллекторским компаниям или компаниям занимающимся автоинформированием
+                  своих клиентов о каких то новинках или новых услугах, либо задолженности
+                </p>
+              </div>
+              <img
+                class="h-[150px] w-full object-cover md:h-[350px] md:object-contain xl:w-1/2"
+                src="/img/service.jpg"
+                alt="" />
+            </div>
+            <div class="bg-light flex flex-col items-center gap-6 rounded-2xl p-4 xl:flex-row xl:rounded-4xl xl:p-8">
+              <div class="xl-w-1/2 order-none w-full xl:order-2">
+                <h3
+                  class="text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                  Модуль автоматического информирования клиентов
+                </h3>
+                <p
+                  class="font-regular mt-3 text-sm leading-4 md:mt-4 md:text-lg md:leading-6 md:font-medium xl:text-xl">
+                  Данный модуль будет полезен коллекторским компаниям или компаниям занимающимся автоинформированием
+                  своих клиентов о каких то новинках или новых услугах, либо задолженности
+                </p>
+              </div>
+              <img
+                class="h-[150px] w-full object-cover md:h-[350px] md:object-contain xl:w-1/2"
+                src="/img/service.jpg"
+                alt="" />
+            </div>
+            <div class="bg-light flex flex-col items-center gap-6 rounded-2xl p-4 xl:flex-row xl:rounded-4xl xl:p-8">
+              <div class="xl-w-1/2 w-full">
+                <h3
+                  class="text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                  Модуль автоматического информирования клиентов
+                </h3>
+                <p
+                  class="font-regular mt-3 text-sm leading-4 md:mt-4 md:text-lg md:leading-6 md:font-medium xl:text-xl">
+                  Данный модуль будет полезен коллекторским компаниям или компаниям занимающимся автоинформированием
+                  своих клиентов о каких то новинках или новых услугах, либо задолженности
+                </p>
+              </div>
+              <img
+                class="h-[150px] w-full object-cover md:h-[350px] md:object-contain xl:w-1/2"
+                src="/img/service.jpg"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="bg-primary relative overflow-hidden rounded-2xl px-4 py-6 md:p-4 xl:rounded-4xl xl:p-8">
+            <h2
+              class="relative z-10 max-w-[840px] text-4xl leading-9 font-extrabold text-white md:text-6xl md:leading-11 md:font-semibold xl:text-8xl xl:leading-18 xl:font-extrabold 2xl:text-9xl">
+              3 месяца гарантийной поддержки
+            </h2>
+            <div class="relative z-10 mt-4 flex flex-wrap gap-2 md:mt-5 xl:mt-6">
+              <div
+                class="bg-primary-300 rounded-[38px] px-4 py-[9px] text-xs leading-3.5 font-bold text-white md:px-6 md:py-3.5 md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                Обновления
+              </div>
+              <div
+                class="bg-primary-300 rounded-[38px] px-4 py-[9px] text-xs leading-3.5 font-bold text-white md:px-6 md:py-3.5 md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                Сопровождение
+              </div>
+              <div
+                class="bg-primary-300 rounded-[38px] px-4 py-[9px] text-xs leading-3.5 font-bold text-white md:px-6 md:py-3.5 md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                Решение ошибок
+              </div>
+              <div
+                class="bg-primary-300 rounded-[38px] px-4 py-[9px] text-xs leading-3.5 font-bold text-white md:px-6 md:py-3.5 md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                Настройка
+              </div>
+            </div>
+            <img
+              class="absolute top-1/2 left-1/2 w-[375px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain md:-right-[88px] md:left-auto md:w-auto md:translate-x-0 xl:-right-[60px]"
+              src="/img/tarifs-lines.svg"
+              alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 xl:py-20">
+        <div class="container">
+          <h2
+            class="mb-6 max-w-[488px] text-3xl leading-9 font-semibold md:mb-8 md:max-w-[580px] md:text-6xl md:leading-11 xl:max-w-[790px] xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+            Отзывы
+          </h2>
+          <div class="reviews-swiper swiper max-xl:!-mx-8 max-xl:!px-8 max-md:!-mx-4 max-md:!px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide max-xl:!w-[389px] max-md:!w-[289px]">
+                <div class="border-border rounded-2xl border p-4 xl:rounded-4xl xl:p-8">
+                  <div class="leading-4 font-semibold md:text-xl md:leading-6 xl:text-2xl xl:leading-7">Игорь Б.</div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                    <p>
+                      Перешли на «ТВОЯ АТС» после долгого поиска надёжного и простого решения. Удивило, насколько быстро
+                      сотрудники адаптировались — интерфейс интуитивный, не пришлось проводить обучение. Особенно
+                      хочется отметить техническую поддержку — всегда на связи, быстро помогают даже с нестандартными
+                      задачами. Система работает стабильно, звонки чёткие, без сбоев. Подключили к нашей CRM
+                      без проблем. Отличный продукт для бизнеса!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide max-xl:!w-[389px] max-md:!w-[289px]">
+                <div class="border-border rounded-2xl border p-4 xl:rounded-4xl xl:p-8">
+                  <div class="leading-4 font-semibold md:text-xl md:leading-6 xl:text-2xl xl:leading-7">Игорь Б.</div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                    <p>
+                      Перешли на «ТВОЯ АТС» после долгого поиска надёжного и простого решения. Удивило, насколько быстро
+                      сотрудники адаптировались — интерфейс интуитивный, не пришлось проводить обучение. Особенно
+                      хочется отметить техническую поддержку — всегда на связи, быстро помогают даже с нестандартными
+                      задачами. Система работает стабильно, звонки чёткие, без сбоев. Подключили к нашей CRM
+                      без проблем. Отличный продукт для бизнеса!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide max-xl:!w-[389px] max-md:!w-[289px]">
+                <div class="border-border rounded-2xl border p-4 xl:rounded-4xl xl:p-8">
+                  <div class="leading-4 font-semibold md:text-xl md:leading-6 xl:text-2xl xl:leading-7">Игорь Б.</div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                    <p>
+                      Перешли на «ТВОЯ АТС» после долгого поиска надёжного и простого решения. Удивило, насколько быстро
+                      сотрудники адаптировались — интерфейс интуитивный, не пришлось проводить обучение. Особенно
+                      хочется отметить техническую поддержку — всегда на связи, быстро помогают даже с нестандартными
+                      задачами. Система работает стабильно, звонки чёткие, без сбоев. Подключили к нашей CRM
+                      без проблем. Отличный продукт для бизнеса!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide max-xl:!w-[389px] max-md:!w-[289px]">
+                <div class="border-border rounded-2xl border p-4 xl:rounded-4xl xl:p-8">
+                  <div class="leading-4 font-semibold md:text-xl md:leading-6 xl:text-2xl xl:leading-7">Игорь Б.</div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                    <p>
+                      Перешли на «ТВОЯ АТС» после долгого поиска надёжного и простого решения. Удивило, насколько быстро
+                      сотрудники адаптировались — интерфейс интуитивный, не пришлось проводить обучение. Особенно
+                      хочется отметить техническую поддержку — всегда на связи, быстро помогают даже с нестандартными
+                      задачами. Система работает стабильно, звонки чёткие, без сбоев. Подключили к нашей CRM
+                      без проблем. Отличный продукт для бизнеса!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide max-xl:!w-[389px] max-md:!w-[289px]">
+                <div class="border-border rounded-2xl border p-4 xl:rounded-4xl xl:p-8">
+                  <div class="leading-4 font-semibold md:text-xl md:leading-6 xl:text-2xl xl:leading-7">Игорь Б.</div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                    <p>
+                      Перешли на «ТВОЯ АТС» после долгого поиска надёжного и простого решения. Удивило, насколько быстро
+                      сотрудники адаптировались — интерфейс интуитивный, не пришлось проводить обучение. Особенно
+                      хочется отметить техническую поддержку — всегда на связи, быстро помогают даже с нестандартными
+                      задачами. Система работает стабильно, звонки чёткие, без сбоев. Подключили к нашей CRM
+                      без проблем. Отличный продукт для бизнеса!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide max-xl:!w-[389px] max-md:!w-[289px]">
+                <div class="border-border rounded-2xl border p-4 xl:rounded-4xl xl:p-8">
+                  <div class="leading-4 font-semibold md:text-xl md:leading-6 xl:text-2xl xl:leading-7">Игорь Б.</div>
+                  <div
+                    class="mt-3 space-y-3 text-sm leading-4 font-medium md:text-base md:leading-5 xl:text-lg xl:leading-6">
+                    <p>
+                      Перешли на «ТВОЯ АТС» после долгого поиска надёжного и простого решения. Удивило, насколько быстро
+                      сотрудники адаптировались — интерфейс интуитивный, не пришлось проводить обучение. Особенно
+                      хочется отметить техническую поддержку — всегда на связи, быстро помогают даже с нестандартными
+                      задачами. Система работает стабильно, звонки чёткие, без сбоев. Подключили к нашей CRM
+                      без проблем. Отличный продукт для бизнеса!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 flex justify-center gap-4 md:mt-8 md:gap-6 xl:mt-10">
+              <button
+                class="group hover:bg-primary reviews-swiper-prev flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-white transition-colors md:h-14 md:w-14">
+                <svg
+                  class="h-3.5 w-3.5 stroke-black transition-colors group-hover:stroke-white md:h-4.5 md:w-4.5"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.3184 3.06043L6.42836 7.95043C5.85086 8.52793 5.85086 9.47293 6.42836 10.0504L11.3184 14.9404"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button
+                class="group hover:bg-primary reviews-swiper-next flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-white transition-colors md:h-14 md:w-14">
+                <svg
+                  class="h-3.5 w-3.5 stroke-black transition-colors group-hover:stroke-white md:h-4.5 md:w-4.5"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.68164 14.9396L11.5716 10.0496C12.1491 9.47207 12.1491 8.52707 11.5716 7.94957L6.68164 3.05957"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 xl:py-20">
+        <div class="container">
+          <h2
+            class="mb-6 max-w-[790px] text-3xl leading-9 font-semibold md:mb-8 md:text-6xl md:leading-11 xl:text-8xl xl:leading-15.5 2xl:text-9xl 2xl:leading-18">
+            Виды лицензии
+          </h2>
+          <div class="-mt-2 -ml-2 flex flex-wrap md:-mt-4 md:-ml-4 xl:-mt-5 xl:-ml-5 2xl:-mt-6 2xl:-ml-6">
+            <div class="w-full pt-2 pl-2 md:w-1/3 md:pt-4 md:pl-4 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="bg-light-300 hover:bg-primary group flex h-full cursor-default items-center gap-2 rounded-2xl p-4 transition-colors md:flex-col md:items-start md:gap-6 xl:rounded-4xl xl:p-8">
+                <div class="flex h-6 w-6 items-center justify-center md:h-8 md:w-8">
+                  <svg
+                    class="fill-primary max-h-full transition-colors group-hover:fill-white"
+                    width="24"
+                    height="30"
+                    viewBox="0 0 24 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 0.935547L0 5.29955V14.9995C0 25.9595 11.645 28.9415 11.762 28.9715L12 29.0285L12.238 28.9715C12.355 28.9415 24 25.9595 24 14.9995V5.29955L12 0.935547ZM10 20.4135L5.293 15.7065L6.707 14.2925L10 17.5855L17.293 10.2925L18.707 11.7065L10 20.4135Z" />
+                  </svg>
+                </div>
+                <p
+                  class="leading-5 font-semibold transition-colors group-hover:text-white md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Бессрочная лицензия на право использования
+                </p>
+              </div>
+            </div>
+            <div class="w-full pt-2 pl-2 md:w-1/3 md:pt-4 md:pl-4 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="bg-light-300 hover:bg-primary group flex h-full cursor-default items-center gap-2 rounded-2xl p-4 transition-colors md:flex-col md:items-start md:gap-6 xl:rounded-4xl xl:p-8">
+                <div class="flex h-6 w-6 items-center justify-center md:h-8 md:w-8">
+                  <svg
+                    class="fill-primary max-h-full transition-colors group-hover:fill-white"
+                    width="24"
+                    height="30"
+                    viewBox="0 0 24 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 0.935547L0 5.29955V14.9995C0 25.9595 11.645 28.9415 11.762 28.9715L12 29.0285L12.238 28.9715C12.355 28.9415 24 25.9595 24 14.9995V5.29955L12 0.935547ZM10 20.4135L5.293 15.7065L6.707 14.2925L10 17.5855L17.293 10.2925L18.707 11.7065L10 20.4135Z" />
+                  </svg>
+                </div>
+                <p
+                  class="leading-5 font-semibold transition-colors group-hover:text-white md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Годовая лицензия на право использования
+                </p>
+              </div>
+            </div>
+            <div class="w-full pt-2 pl-2 md:w-1/3 md:pt-4 md:pl-4 xl:pt-5 xl:pl-5 2xl:pt-6 2xl:pl-6">
+              <div
+                class="bg-light-300 hover:bg-primary group flex h-full cursor-default items-center gap-2 rounded-2xl p-4 transition-colors md:flex-col md:items-start md:gap-6 xl:rounded-4xl xl:p-8">
+                <div class="flex h-6 w-6 items-center justify-center md:h-8 md:w-8">
+                  <svg
+                    class="fill-primary max-h-full transition-colors group-hover:fill-white"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24.1289 16.0003C24.1289 15.4825 24.5486 15.0628 25.0664 15.0628H27.0406C26.5891 9.6994 22.3011 5.41146 16.9378 4.95996V6.93421C16.9378 7.45196 16.518 7.87171 16.0003 7.87171C15.4825 7.87171 15.0628 7.45196 15.0628 6.93421V4.95996C9.6994 5.41146 5.41146 9.6994 4.95996 15.0628H6.93415C7.4519 15.0628 7.87165 15.4825 7.87165 16.0003C7.87165 16.518 7.4519 16.9378 6.93415 16.9378H4.95996C5.41146 22.3011 9.6994 26.5891 15.0628 27.0406V25.0663C15.0628 24.5486 15.4825 24.1288 16.0003 24.1288C16.518 24.1288 16.9378 24.5486 16.9378 25.0663V27.0406C22.3011 26.5891 26.5891 22.3011 27.0406 16.9378H25.0664C24.5486 16.9378 24.1289 16.518 24.1289 16.0003ZM21.6622 11.5235L16.6723 16.6539C16.325 17.011 15.7587 17.0343 15.3833 16.7061L11.6584 13.4498C11.2686 13.109 11.2288 12.5167 11.5696 12.127C11.9104 11.7371 12.5026 11.6973 12.8925 12.0381L15.9481 14.7093L20.3181 10.2161C20.6791 9.84502 21.2727 9.83684 21.6438 10.1977C22.015 10.5588 22.0232 11.1523 21.6622 11.5235Z" />
+                    <path
+                      d="M16 0C7.17756 0 0 7.17756 0 16C0 24.8224 7.17756 32 16 32C24.8224 32 32 24.8224 32 16C32 7.17756 24.8224 0 16 0ZM16 28.9554C8.85637 28.9554 3.04463 23.1436 3.04463 16C3.04463 8.85637 8.85637 3.04463 16 3.04463C23.1436 3.04463 28.9554 8.85637 28.9554 16C28.9554 23.1436 23.1436 28.9554 16 28.9554Z" />
+                  </svg>
+                </div>
+                <p
+                  class="leading-5 font-semibold transition-colors group-hover:text-white md:text-lg md:leading-6 xl:text-2xl xl:leading-7">
+                  Время внедрения – 1 час
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-10 xl:pt-20">
+      <div class="container">
+        <div class="flex flex-wrap items-end xl:flex-nowrap">
+          <div class="w-full xl:w-auto">
+            <a class="block w-[106px] md:w-[177px]" href="index.html">
+              <img class="w-full" src="img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="mt-6 flex flex-col gap-7 md:mt-8 md:flex-row md:gap-10 xl:mt-0 xl:ml-auto xl:pl-5">
+            <div class="min-w-[138px]">
+              <div class="mb-5 hidden leading-5 font-semibold text-black/60 md:block xl:mb-6">Меню</div>
+              <div class="flex flex-col items-start gap-2 md:gap-3">
+                <a class="leading-5 font-semibold" href="index.html">Главная</a>
+                <a class="leading-5 font-semibold" href="#">Продукт</a>
+                <a class="leading-5 font-semibold" href="#">О компании</a>
+                <a class="leading-5 font-semibold" href="#">Блог</a>
+              </div>
+            </div>
+            <div class="min-w-[138px]">
+              <div class="mb-11 hidden leading-5 font-semibold text-black/60 md:block">Контакты</div>
+              <div class="flex flex-col items-start gap-4 md:gap-3">
+                <div class="flex items-center gap-2">
+                  <img class="h-4 w-4 object-contain md:h-6 md:w-6" src="/img/icons/location.svg" alt="" />
+                  <span class="text-xs leading-3.5 font-semibold md:text-base md:leading-5">
+                    г.Новосибирск, ул.Демакова, дом 27, офис 15.
+                  </span>
+                </div>
+                <a class="flex items-center gap-2" href="mailto:sales@tvoya-ats.ru">
+                  <img class="h-4 w-4 object-contain md:h-6 md:w-6" src="/img/icons/email.svg" alt="" />
+                  <span class="text-xs leading-3.5 font-semibold md:text-base md:leading-5">sales@tvoya-ats.ru</span>
+                </a>
+                <a class="flex items-center gap-2" href="tel:+73832396631">
+                  <img class="h-4 w-4 object-contain md:h-6 md:w-6" src="/img/icons/phone.svg" alt="" />
+                  <span class="text-xs leading-3.5 font-semibold md:text-base md:leading-5">(383) 239-66-31</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t-border mt-4 flex flex-col items-start justify-between gap-4 border-t py-4 md:mt-10 md:flex-row md:items-center xl:mt-20">
+          <div class="text-grey text-sm leading-4 font-medium">©2025. ООО «ТВОЯ АТС»</div>
+          <div class="text-grey text-sm leading-4 font-medium md:mr-6">Политика конфиденциальности</div>
+          <div class="flex flex-col gap-[2px]">
+            <a class="text-grey text-sm leading-4 font-medium" href="#">Создание сайтов</a>
+            <a class="text-grey text-sm leading-4 font-medium" href="#">Продвижение сайтов</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: var(--color-black);
+  font-family: "Manrope", sans-serif;
+}
+
+@theme {
+  --color-primary: #00a8df;
+  --color-primary-300: #33b9e5;
+  --color-primary-500: #0094cb;
+  --color-primary-600: #008ac1;
+  --color-secondary: #003399;
+  --color-white: #ffffff;
+  --color-black: #404569;
+  --color-light: #f9f9f9;
+  --color-light-300: #f5f5f5;
+  --color-border: #dfdfdf;
+  --color-grey: #919191;
+
+  --text-10xl: 110px;
+  --text-9xl: 62px;
+  --text-8xl: 58px;
+  --text-7xl: 54px;
+  --text-6xl: 40px;
+  --text-5xl: 32px;
+  --text-4xl: 30px;
+  --text-3xl: 28px;
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1440px;
+
+  --default-transition-duration: 300ms;
+}
+
+@utility container {
+  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 94rem;
+
+  @variant md {
+    padding-inline: 2rem;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary md:hover:bg-primary-500 md:active:bg-primary-600 inline-flex cursor-pointer items-center gap-1 rounded-[65px] px-4 py-2.5 text-[13px] leading-4 font-bold text-white transition-colors duration-300 md:px-6 md:py-3.5 md:text-base md:leading-5 xl:py-4 xl:text-lg xl:leading-6;
+  }
+
+  .btn-white {
+    @apply text-primary inline-flex cursor-pointer items-center gap-1 rounded-[65px] bg-white px-4 py-2.5 text-[13px] leading-4 font-bold transition-colors duration-300 md:px-6 md:py-3.5 md:text-base md:leading-5 xl:py-4 xl:text-lg xl:leading-6;
+  }
+}
+
+@layer utilities {
+  .animate-scroll-mobile {
+    animation: scroll-mobile 20s linear infinite;
+  }
+
+  .animate-scroll-desktop {
+    animation: scroll-desktop 12s linear infinite;
+  }
+
+  .swiper-slide-visible {
+    @apply opacity-100;
+  }
+}
+
+@keyframes scroll-mobile {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 16px));
+  }
+}
+
+@keyframes scroll-desktop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 24px));
+  }
+}
