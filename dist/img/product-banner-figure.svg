@@ -1,0 +1,52 @@
+<svg width="2334" height="2334" viewBox="0 0 2334 2334" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.2">
+<g id="Img_inner" data-figma-trr="r40u1.9-0f">
+<path d="M979.299 1166.77C979.299 1364.61 967.161 1557.99 944.424 1722.46C921.683 1886.96 889.374 2015.04 851.638 2090.59C832.755 2128.39 813.043 2151.98 793.258 2161.4C783.404 2166.09 773.527 2167.27 763.668 2164.95C753.788 2162.62 743.838 2156.75 733.904 2147.2C714.013 2128.08 694.829 2094.8 676.99 2048.71C659.162 2002.65 642.719 1943.92 628.253 1874C599.32 1734.15 579.61 1555.95 571.625 1361.91C563.639 1167.88 567.738 966.764 583.401 783.999C599.065 601.222 625.587 445.059 659.592 335.235C676.598 280.317 695.072 238.289 714.355 210.016C733.668 181.699 753.602 167.448 773.474 167.448" stroke="url(#paint0_linear_2050_2493)" stroke-width="2.34907" stroke-linecap="round"/>
+</g>
+<use xlink:href="#Img_inner" transform="translate(196.889 -168.159) rotate(9)"/>
+<use xlink:href="#Img_inner" transform="translate(417.659 -303.447) rotate(18)"/>
+<use xlink:href="#Img_inner" transform="translate(656.875 -402.533) rotate(27)"/>
+<use xlink:href="#Img_inner" transform="translate(908.646 -462.978) rotate(36)"/>
+<use xlink:href="#Img_inner" transform="translate(1166.77 -483.293) rotate(45)"/>
+<use xlink:href="#Img_inner" transform="translate(1424.9 -462.978) rotate(54)"/>
+<use xlink:href="#Img_inner" transform="translate(1676.67 -402.533) rotate(63)"/>
+<use xlink:href="#Img_inner" transform="translate(1915.89 -303.447) rotate(72)"/>
+<use xlink:href="#Img_inner" transform="translate(2136.66 -168.159) rotate(81)"/>
+<use xlink:href="#Img_inner" transform="translate(2333.55 2.77555e-05) rotate(90)"/>
+<use xlink:href="#Img_inner" transform="translate(2501.71 196.888) rotate(99)"/>
+<use xlink:href="#Img_inner" transform="translate(2636.99 417.659) rotate(108)"/>
+<use xlink:href="#Img_inner" transform="translate(2736.08 656.875) rotate(117)"/>
+<use xlink:href="#Img_inner" transform="translate(2796.53 908.646) rotate(126)"/>
+<use xlink:href="#Img_inner" transform="translate(2816.84 1166.77) rotate(135)"/>
+<use xlink:href="#Img_inner" transform="translate(2796.53 1424.9) rotate(144)"/>
+<use xlink:href="#Img_inner" transform="translate(2736.08 1676.67) rotate(153)"/>
+<use xlink:href="#Img_inner" transform="translate(2636.99 1915.89) rotate(162)"/>
+<use xlink:href="#Img_inner" transform="translate(2501.71 2136.66) rotate(171)"/>
+<use xlink:href="#Img_inner" transform="translate(2333.55 2333.55) rotate(-180)"/>
+<use xlink:href="#Img_inner" transform="translate(2136.66 2501.71) rotate(-171)"/>
+<use xlink:href="#Img_inner" transform="translate(1915.89 2636.99) rotate(-162)"/>
+<use xlink:href="#Img_inner" transform="translate(1676.67 2736.08) rotate(-153)"/>
+<use xlink:href="#Img_inner" transform="translate(1424.9 2796.53) rotate(-144)"/>
+<use xlink:href="#Img_inner" transform="translate(1166.77 2816.84) rotate(-135)"/>
+<use xlink:href="#Img_inner" transform="translate(908.646 2796.53) rotate(-126)"/>
+<use xlink:href="#Img_inner" transform="translate(656.874 2736.08) rotate(-117)"/>
+<use xlink:href="#Img_inner" transform="translate(417.659 2636.99) rotate(-108)"/>
+<use xlink:href="#Img_inner" transform="translate(196.889 2501.71) rotate(-99)"/>
+<use xlink:href="#Img_inner" transform="translate(9.33218e-06 2333.55) rotate(-90)"/>
+<use xlink:href="#Img_inner" transform="translate(-168.159 2136.66) rotate(-81)"/>
+<use xlink:href="#Img_inner" transform="translate(-303.447 1915.89) rotate(-72)"/>
+<use xlink:href="#Img_inner" transform="translate(-402.533 1676.67) rotate(-63)"/>
+<use xlink:href="#Img_inner" transform="translate(-462.978 1424.9) rotate(-54)"/>
+<use xlink:href="#Img_inner" transform="translate(-483.293 1166.77) rotate(-45)"/>
+<use xlink:href="#Img_inner" transform="translate(-462.978 908.645) rotate(-36)"/>
+<use xlink:href="#Img_inner" transform="translate(-402.533 656.875) rotate(-27)"/>
+<use xlink:href="#Img_inner" transform="translate(-303.447 417.659) rotate(-18)"/>
+<use xlink:href="#Img_inner" transform="translate(-168.159 196.888) rotate(-8.99999)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2050_2493" x1="566.474" y1="1166.77" x2="980.474" y2="1166.77" gradientUnits="userSpaceOnUse">
+<stop offset="0.730769" stop-color="#404569"/>
+<stop offset="1" stop-color="#404569" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

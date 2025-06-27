@@ -8,3 +8,5 @@ import "./reviews";
 import "./business";
 import "./addition-service";
 import "./clients";
+import "./accordion";
+import "./imask";
