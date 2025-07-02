@@ -1,13 +1,14 @@
 import $ from "jquery";
 
+let animated = false;
+
 $(".accordion").each(function () {
   const $accordion = $(this);
+  const $box = $accordion.closest(".accordion-box");
   const $btn = $accordion.find(".accordion-btn");
   const $content = $accordion.find(".accordion__content");
-  const $main = $accordion.find(".accordion__main");
-  const delay = +$accordion.data("accordion-delay") || 500;
+  const delay = +$accordion.data("accordion-delay") || 450;
   const widthLimit = +$accordion.data("accordion-width");
-  let animated = false;
 
   $content.css("transition", `height ${delay / 1000}s`);
 
@@ -16,26 +17,39 @@ $(".accordion").each(function () {
 
     animated = true;
 
-    const isActive = $accordion.hasClass("accordion--active");
+    setTimeout(() => (animated = false), delay);
 
-    if (!isActive) {
-      $btn.addClass("accordion-btn--active");
-      $accordion.addClass("accordion--activating");
-      $content.css("height", $main.outerHeight());
-    } else {
-      $btn.removeClass("accordion-btn--active");
-      $content.css("height", $content[0].scrollHeight);
-      $accordion.addClass("accordion--activating");
-      setTimeout(() => $content.css("height", "0px"));
+    const $activatingAccordion = $box.find(".accordion--active");
+    if ($activatingAccordion.length !== 0) {
+      switchAccordion($activatingAccordion, true);
     }
 
-    setTimeout(() => {
-      animated = false;
-      $accordion.removeClass("accordion--activating");
-      $accordion.toggleClass("accordion--active", !isActive);
-      if (!isActive) {
-        $content.css("height", "");
-      }
-    }, delay);
+    const isActive = $accordion.hasClass("accordion--active");
+    switchAccordion($accordion, isActive, delay);
   });
 });
+
+function switchAccordion($accordion, isActive, delay = 450) {
+  const $btn = $accordion.find(".accordion-btn");
+  const $content = $accordion.find(".accordion__content");
+  const $main = $accordion.find(".accordion__main");
+
+  if (!isActive) {
+    $btn.addClass("accordion-btn--active");
+    $accordion.addClass("accordion--activating");
+    $content.css("height", $main.outerHeight());
+  } else {
+    $btn.removeClass("accordion-btn--active");
+    $content.css("height", $content[0].scrollHeight);
+    $accordion.addClass("accordion--activating");
+    setTimeout(() => $content.css("height", "0px"));
+  }
+
+  setTimeout(() => {
+    $accordion.removeClass("accordion--activating");
+    $accordion.toggleClass("accordion--active", !isActive);
+    if (!isActive) {
+      $content.css("height", "");
+    }
+  }, delay);
+}
