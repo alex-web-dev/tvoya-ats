@@ -8,6 +8,8 @@ export default defineConfig({
       input: {
         index: "index.html",
         product: "product.html",
+        about: "about.html",
+        blog: "blog.html",
       },
     },
   },

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Твоя АТС - Блог</title>
+  </head>
+  <body>
+    <header class="border-border absolute z-50 w-full border bg-white md:bg-none">
+      <div class="relative z-30 bg-white/50 py-3 md:py-5">
+        <div class="container">
+          <div class="hidden items-center justify-between gap-5 pb-5 md:flex">
+            <div class="flex items-center gap-2">
+              <img src="/img/icons/location.svg" alt="" />
+              <span class="text-sm leading-4 font-medium">г.Новосибирск, ул.Демакова, дом 27, офис 15.</span>
+            </div>
+            <div class="flex items-center gap-5">
+              <a class="flex items-center gap-2" href="mailto:sales@tvoya-ats.ru">
+                <img src="/img/icons/email.svg" alt="" />
+                <span class="text-sm leading-4 font-medium">sales@tvoya-ats.ru</span>
+              </a>
+              <a class="flex items-center gap-2" href="tel:+73832396631">
+                <img src="/img/icons/phone.svg" alt="" />
+                <span class="text-sm leading-4 font-medium">(383) 239-66-31</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-5">
+            <a class="block w-[106px] md:w-[177px]" href="index.html">
+              <img class="w-full" src="img/logo.svg" alt="" />
+            </a>
+            <div class="hidden items-center gap-6 md:flex">
+              <a class="leading-5 font-semibold" href="index.html">Главная</a>
+              <a class="leading-5 font-semibold" href="product.html">Продукт</a>
+              <a class="leading-5 font-semibold" href="about.html">О компании</a>
+              <a class="leading-5 font-semibold" href="blog.html">Блог</a>
+            </div>
+            <div class="flex gap-3 md:hidden">
+              <button class="bg-light-300 flex h-7 w-7 cursor-pointer items-center justify-center rounded-sm">
+                <img src="/img/icons/phone.svg" alt="" />
+              </button>
+              <button
+                class="toggle-menu group bg-light-300 flex h-7 w-7 cursor-pointer flex-col items-center justify-center rounded-sm">
+                <span class="relative flex h-[1px] w-[14px] flex-col">
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[-3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+                  <span
+                    class="absolute h-full w-full flex-none rounded bg-black transition-opacity duration-300 group-[.is-active]:opacity-0"></span>
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-0 left-0 z-10 h-full w-full bg-white md:z-0"></div>
+    </header>
+
+    <div
+      class="mobile-menu fixed top-0 left-0 z-60 flex h-0 w-full flex-col overflow-hidden bg-white transition-all duration-500 [.is-active]:h-dvh">
+      <div class="border-border border py-3">
+        <div class="container">
+          <div class="flex items-center justify-between gap-5">
+            <a class="block w-[106px] md:w-[177px]" href="index.html">
+              <img class="w-full" src="img/logo.svg" alt="" />
+            </a>
+            <div class="flex gap-3">
+              <button class="bg-light-300 flex h-7 w-7 cursor-pointer items-center justify-center rounded-sm">
+                <img src="/img/icons/phone.svg" alt="" />
+              </button>
+              <button
+                class="toggle-menu group bg-light-300 flex h-7 w-7 cursor-pointer flex-col items-center justify-center rounded-sm">
+                <span class="relative flex h-[1px] w-[14px] flex-col">
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[-3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:rotate-45"></span>
+                  <span
+                    class="absolute h-full w-full flex-none rounded bg-black transition-opacity duration-300 group-[.is-active]:opacity-0"></span>
+                  <span
+                    class="absolute h-full w-full flex-none translate-y-[3.5px] rounded bg-black transition-transform duration-300 group-[.is-active]:translate-y-0 group-[.is-active]:-rotate-45"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-auto py-6">
+        <div class="container flex flex-col">
+          <div class="flex flex-col items-start gap-2">
+            <a class="leading-5 font-semibold" href="index.html">Главная</a>
+            <a class="leading-5 font-semibold" href="product.html">Продукт</a>
+            <a class="leading-5 font-semibold" href="about.html">О компании</a>
+            <a class="leading-5 font-semibold" href="blog.html">Блог</a>
+          </div>
+          <div class="mt-auto flex flex-col items-start gap-4 pt-4">
+            <a class="text-grey flex items-center gap-2 text-xs leading-4 font-medium" href="mailto:sales@tvoya-ats.ru">
+              <img class="h-4 w-4 object-contain" src="/img/icons/email-grey.svg" alt="" />
+              <span>sales@tvoya-ats.ru</span>
+            </a>
+            <a class="text-grey flex items-center gap-2 text-xs leading-4 font-medium" href="tel:+73832396631">
+              <img class="h-4 w-4 object-contain" src="/img/icons/phone-grey.svg" alt="" />
+              <span>(383) 239-66-31</span>
+            </a>
+            <div class="text-grey flex items-center gap-2 text-xs leading-4 font-medium">
+              <img class="h-4 w-4 object-contain" src="/img/icons/location-grey.svg" alt="" />
+              <span>г.Новосибирск, ул.Демакова, дом 27, офис 15.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="relative flex-auto pt-[54px] md:pt-[118px]">
+      <div class="pt-4 pb-5 md:pt-5 md:pb-4 xl:pb-10">
+        <div class="container">
+          <div class="flex items-center gap-2 overflow-x-auto overflow-y-hidden pb-1">
+            <a class="flex-none text-sm leading-4 font-medium text-black/60" href="index.html">Главная</a>
+            <span class="flex-none text-sm leading-4 font-medium text-black/60">•</span>
+            <span class="flex-none text-sm leading-4 font-medium text-black">Блог</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="pb-10 xl:pb-0">
+        <div class="container">
+          <div class="flex flex-col gap-4 xl:gap-5 2xl:gap-6">
+            <div class="border-border border-b pb-4 xl:pb-8">
+              <div class="flex flex-col gap-6 md:flex-row">
+                <div>
+                  <h2
+                    class="max-w-[810px] text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                    <a href="#">ТВОЯ АТС: как бизнесу упростить коммуникации и&nbsp;не потерять клиентов</a>
+                  </h2>
+                  <p class="mt-3 text-sm leading-4 font-medium text-black/60 md:text-lg md:leading-6 xl:text-xl">
+                    В статье рассказываем, что такое виртуальная АТС, зачем она нужна бизнесу, как помогает ускорить
+                    обработку обращений, повысить качество сервиса и не терять клиентов. Простыми словами объясняем
+                    основные функции, преимущества и типовые сценарии использования. Подходит для малого и среднего
+                    бизнеса, который хочет систематизировать работу с клиентами и выстроить удобную телефонию
+                  </p>
+                </div>
+                <a class="h-[200px] w-full flex-none overflow-hidden rounded-4xl md:w-[200px]" href="#">
+                  <img class="h-full w-full object-cover" src="/img/blog.jpg" alt="" />
+                </a>
+              </div>
+              <div class="mt-6 flex items-center gap-2">
+                <a class="h-[40px] w-[35px]" href="#">
+                  <img class="h-full w-full object-contain" src="/img/icons/logo-icon.svg" alt="" />
+                </a>
+                <div class="flex flex-col items-start">
+                  <a href="#">
+                    <img src="/img/icons/logo-text.svg" alt="" />
+                  </a>
+                  <div class="mt-2 flex items-center gap-[1px] overflow-x-auto overflow-y-hidden">
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      28 Марта, 2025
+                    </span>
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      •
+                    </span>
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      4 минуты
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-border border-b pb-4 xl:pb-8">
+              <div class="flex flex-col gap-6 md:flex-row">
+                <div>
+                  <h2
+                    class="max-w-[810px] text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                    <a href="#">ТВОЯ АТС: как бизнесу упростить коммуникации и&nbsp;не потерять клиентов</a>
+                  </h2>
+                  <p class="mt-3 text-sm leading-4 font-medium text-black/60 md:text-lg md:leading-6 xl:text-xl">
+                    В статье рассказываем, что такое виртуальная АТС, зачем она нужна бизнесу, как помогает ускорить
+                    обработку обращений, повысить качество сервиса и не терять клиентов. Простыми словами объясняем
+                    основные функции, преимущества и типовые сценарии использования. Подходит для малого и среднего
+                    бизнеса, который хочет систематизировать работу с клиентами и выстроить удобную телефонию
+                  </p>
+                </div>
+                <a class="h-[200px] w-full flex-none overflow-hidden rounded-4xl md:w-[200px]" href="#">
+                  <img class="h-full w-full object-cover" src="/img/blog.jpg" alt="" />
+                </a>
+              </div>
+              <div class="mt-6 flex items-center gap-2">
+                <a class="h-[40px] w-[35px]" href="#">
+                  <img class="h-full w-full object-contain" src="/img/icons/logo-icon.svg" alt="" />
+                </a>
+                <div class="flex flex-col items-start">
+                  <a href="#">
+                    <img src="/img/icons/logo-text.svg" alt="" />
+                  </a>
+                  <div class="mt-2 flex items-center gap-[1px] overflow-x-auto overflow-y-hidden">
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      28 Марта, 2025
+                    </span>
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      •
+                    </span>
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      4 минуты
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-border border-b pb-4 xl:pb-8">
+              <div class="flex flex-col gap-6 md:flex-row">
+                <div>
+                  <h2
+                    class="max-w-[810px] text-xl leading-6 font-extrabold md:text-2xl md:leading-7 xl:text-3xl xl:leading-8 2xl:text-5xl 2xl:leading-9">
+                    <a href="#">ТВОЯ АТС: как бизнесу упростить коммуникации и&nbsp;не потерять клиентов</a>
+                  </h2>
+                  <p class="mt-3 text-sm leading-4 font-medium text-black/60 md:text-lg md:leading-6 xl:text-xl">
+                    В статье рассказываем, что такое виртуальная АТС, зачем она нужна бизнесу, как помогает ускорить
+                    обработку обращений, повысить качество сервиса и не терять клиентов. Простыми словами объясняем
+                    основные функции, преимущества и типовые сценарии использования. Подходит для малого и среднего
+                    бизнеса, который хочет систематизировать работу с клиентами и выстроить удобную телефонию
+                  </p>
+                </div>
+              </div>
+              <div class="mt-6 flex items-end gap-2">
+                <a class="h-[40px] w-[35px]" href="#">
+                  <img class="h-full w-full object-contain" src="/img/icons/logo-icon.svg" alt="" />
+                </a>
+                <div class="mt-1 flex flex-col items-start">
+                  <a href="#">
+                    <img src="/img/icons/logo-text.svg" alt="" />
+                  </a>
+                  <div class="mt-2 flex items-center gap-[1px] overflow-x-auto overflow-y-hidden">
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      28 Марта, 2025
+                    </span>
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      •
+                    </span>
+                    <span class="flex-none text-xs leading-3.5 font-medium text-black/60 md:text-sm md:leading-4">
+                      4 минуты
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-10 xl:pt-20">
+      <div class="container">
+        <div class="flex flex-wrap items-end xl:flex-nowrap">
+          <div class="w-full xl:w-auto">
+            <a class="block w-[106px] md:w-[177px]" href="index.html">
+              <img class="w-full" src="img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="mt-6 flex flex-col gap-7 md:mt-8 md:flex-row md:gap-10 xl:mt-0 xl:ml-auto xl:pl-5">
+            <div class="min-w-[138px]">
+              <div class="mb-5 hidden leading-5 font-semibold text-black/60 md:block xl:mb-6">Меню</div>
+              <div class="flex flex-col items-start gap-2 md:gap-3">
+                <a class="leading-5 font-semibold" href="index.html">Главная</a>
+                <a class="leading-5 font-semibold" href="product.html">Продукт</a>
+                <a class="leading-5 font-semibold" href="about.html">О компании</a>
+                <a class="leading-5 font-semibold" href="blog.html">Блог</a>
+              </div>
+            </div>
+            <div class="min-w-[138px]">
+              <div class="mb-11 hidden leading-5 font-semibold text-black/60 md:block">Контакты</div>
+              <div class="flex flex-col items-start gap-4 md:gap-3">
+                <div class="flex items-center gap-2">
+                  <img class="h-4 w-4 object-contain md:h-6 md:w-6" src="/img/icons/location.svg" alt="" />
+                  <span class="text-xs leading-3.5 font-semibold md:text-base md:leading-5">
+                    г.Новосибирск, ул.Демакова, дом 27, офис 15.
+                  </span>
+                </div>
+                <a class="flex items-center gap-2" href="mailto:sales@tvoya-ats.ru">
+                  <img class="h-4 w-4 object-contain md:h-6 md:w-6" src="/img/icons/email.svg" alt="" />
+                  <span class="text-xs leading-3.5 font-semibold md:text-base md:leading-5">sales@tvoya-ats.ru</span>
+                </a>
+                <a class="flex items-center gap-2" href="tel:+73832396631">
+                  <img class="h-4 w-4 object-contain md:h-6 md:w-6" src="/img/icons/phone.svg" alt="" />
+                  <span class="text-xs leading-3.5 font-semibold md:text-base md:leading-5">(383) 239-66-31</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t-border mt-4 flex flex-col items-start justify-between gap-4 border-t py-4 md:mt-10 md:flex-row md:items-center xl:mt-20">
+          <div class="text-grey text-sm leading-4 font-medium">©2025. ООО «ТВОЯ АТС»</div>
+          <a class="text-grey text-sm leading-4 font-medium md:mr-6" href="#">Политика конфиденциальности</a>
+          <div class="flex flex-col gap-[2px]">
+            <a class="text-grey text-sm leading-4 font-medium" href="#">Создание сайтов</a>
+            <a class="text-grey text-sm leading-4 font-medium" href="#">Продвижение сайтов</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
